@@ -4,38 +4,97 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-<!--    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    android:orientation="horizontal"-->
-<!--    android:layout_width="fill_parent"-->
-<!--    android:layout_height="fill_parent"-->
-<!--    >-->
-<!--     </LinearLayout>-->
-	<EditText 
-    android:id="@+id/x"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="Coord: x"
-    />
-   <EditText  
-    android:id="@+id/y"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="Coord: y"     
-    />
-    <EditText
-    android:id="@+id/z"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content"     
-    android:text="Coord: z"
-    />
-   
-    
-	<Button android:id="@+id/loadButton" 
-	android:layout_width="fill_parent" 
-	android:layout_height="wrap_content" 
-	android:text="Load Tile !"></Button>
-	
-	<ImageView android:id="@+id/tileImage" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
 
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+			<TextView 
+			android:id="@+id/textx"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:text="Coord x:" 
+		    />
+			<EditText 
+		    android:id="@+id/x"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:maxLength="6"    
+		    android:inputType="number"
+		    />
+	 </LinearLayout>
+	 
+	 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+		    <TextView
+		    android:id="@+id/texty"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:text="Coord y:"
+		    />    
+		   	<EditText  
+		    android:id="@+id/y"
+		    android:maxLength="6"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:inputType="number"   
+		    android:numeric="integer"   
+		    />
+	</LinearLayout>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+		    <TextView 
+		    android:id="@+id/textz"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:text="Coord z:" 
+		    />
+		    <EditText
+		    android:id="@+id/z"
+		    android:maxLength="6"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"     
+		    android:inputType="number"
+		    />
+	</LinearLayout>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	>
+		
+		
+		<Button android:id="@+id/loadTileButton" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_weight="0.9"
+		android:text="Load Tile !"></Button>
+		
+		<Button android:id="@+id/showMetadataButton" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_weight="0.1"
+		android:text="Show metadata"></Button>
+		
+			
+	</LinearLayout>
+
+	<ImageView android:id="@+id/tileImage" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	>
+	</ImageView>
 
 </LinearLayout>
+    
+	

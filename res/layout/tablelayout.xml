@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_width="fill_parent"-->
+<!--    android:layout_height="fill_parent"-->
+<!--    >-->
+	<TableLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1"
+    >
+
+        <TableRow>
+			<TextView 
+			android:id="@+id/textx"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:text="Coord x:" 
+		    />
+			<EditText 
+		    android:id="@+id/x"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:maxLength="6"    
+		    android:inputType="number"
+		    />
+	    </TableRow>
+	    
+	    <TableRow>	 
+		    <TextView
+		    android:id="@+id/texty"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:text="Coord y:"
+		    />    
+		   	<EditText  
+		    android:id="@+id/y"
+		    android:maxLength="6"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:inputType="number"   
+		    android:numeric="integer"   
+		    />
+	     </TableRow>
+	    
+    	<TableRow>	    
+		    <TextView 
+		    android:id="@+id/textz"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:text="Coord z:" 
+		    />
+		    <EditText
+		    android:id="@+id/z"
+		    android:maxLength="6"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"     
+		    android:inputType="number"
+		    />
+	    </TableRow>
+	   <TableRow> 
+	    <Button android:id="@+id/loadButton" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:text="Load Tile !"></Button>
+	</TableRow>
+	
+	<TableRow>
+	<ImageView android:id="@+id/tileImage" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+	  </TableRow>
+	    
+    </TableLayout>
+    
+	
